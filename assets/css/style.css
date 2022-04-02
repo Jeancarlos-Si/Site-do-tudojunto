@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100&display=swap');
+
+*{
+    font-family: var(--fonte-primaria);
+}
+
+:root{
+    --fonte-primaria: font-family:'Open Sans', sans-serif;
+    --fonte-secundaria: font-family: 'Rubik', sans-serif;
+    --fonte-botao: font-family: 'Shizuru', cursive;
+    --amarelo-mamys: #EDD44F;
+    --amarelo-estranho: #DDD67F;
+    --marrom-bombom:#1E1616;
+    --red-jean:#CA3B3B;
+
+}
+
+.container{
+    max-width: 1170px;
+    
+    
+    margin: 0 auto;
+    
+}
+
+body{
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+    overflow-x: hidden;
+    
+    background-color:var(--amarelo-mamys);
+}
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    height: 9.5vh;
+    background-color:var(--marrom-bombom);
+    justify-content:center
+    
+}
+
+hr {
+    position:absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 62px;
+    
+    border: 1px solid #FFFFFF;
+    
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top:29px;
+    /* justify-content: space-between; */
+    
+}
+
+.button-menu {
+    width: 194px;
+    height:55px;
+    
+    border: 1px solid #CA3B3B;  
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;  
+    background-color: var(--marrom-bombom);
+}
+
+main {
+    width: 100%;
+    
+    height: 81vh;
+    background-color:var(--amarelo-mamys);
+}
+
+.main {
+    
+    display: flex;  
+    width: 100%;
+
+    display: flex;
+
+    height: 100%;
+    position: relative;
+}
+
+
+
+.left {
+    position: relative; 
+    display: flex;  
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 56%;
+    height: 100%;
+}
+
+.call {
+    
+    display: flex;
+
+     
+    background: red;
+    width: 100%;
+    margin-right: 250px;    
+
+    font-size: 2.3rem;
+}
+.call span {
+    color: var(--red-jean);
+    font-size: 3rem;
+    
+}
+
+.left .name {
+    height: 250px;
+    position: absolute;
+}
+
+.line-left{
+    border: 1px solid #FFFFFF;
+    position:absolute;
+    
+}
+
+.items {
+    display: flex;
+}
+
+
+.right {
+    display: flex;  
+    flex-direction: column;
+    position: relative;
+    background-color: green;
+    height: 100%;
+}
+
+.right .img  {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 80px;
+    
+}
+
+
+
+.right #img {
+    position: absolute;
+    width: 400px;
+    min-width: 200px;
+    height:400px;
+    z-index: 10;
+
+    margin-top: 50px;
+}
+
+.right #triangulo {
+    margin-top: 32px;
+    position: absolute;
+    width: 350px;
+    height: 505px;
+    z-index: 1;
+}
+
+.right h2 {
+    position: absolute;
+width: 443px;
+height: 77px;
+top: 450px;
+
+font-family: 'Saira Semi Condensed', sans-serif;
+font-style: italic;
+font-weight: 600;
+font-size: 62px;
+line-height: 75px;
+text-transform: uppercase;
+}
+
+.right .img span {
+    
+    background: red;
+    margin-left: 70px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    background-color: var(--marrom-bombom);
+    height: 9.5vh;
+
+    
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+
+footer div img {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    z-index: 10;
+    bottom: 10px;
+}
+
+
