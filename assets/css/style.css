@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 
 *{
     font-family: var(--fonte-primaria);
@@ -8,6 +9,7 @@
     --fonte-primaria: font-family:'Open Sans', sans-serif;
     --fonte-secundaria: font-family: 'Rubik', sans-serif;
     --fonte-botao: font-family: 'Shizuru', cursive;
+    --fonte-jeancarlos:font-family: 'Just Another Hand', cursive;
     --amarelo-mamys: #EDD44F;
     --amarelo-estranho: #DDD67F;
     --marrom-bombom:#1E1616;
@@ -16,16 +18,15 @@
 }
 
 .container{
-    max-width: 1170px;
+    max-width: 80%;
     
-    
+    display: flex;
     margin: 0 auto;
     
 }
 
 body{
-    position: relative;
-    height: 100%;
+    width: 100%;
     box-sizing: border-box;
     font-family: var(--fonte-primaria);
     overflow-x: hidden;
@@ -33,50 +34,43 @@ body{
     background-color:var(--amarelo-mamys);
 }
 
-
-
-header {
+nav { 
     display: flex;
     width: 100%;
-    height: 9.5vh;
-    background-color:var(--marrom-bombom);
-    justify-content:center
-    
-}
-
-hr {
-    position:absolute;
-    width: 100%;
-    height: 0px;
-    left: 0px;
-    top: 62px;
-    
-    border: 1px solid #FFFFFF;
-    
-}
-
-nav {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    flex-direction: column;
+    justify-content:center;
+    background-color: var(--marrom-bombom);
+    height: 9.5vh; 
 }
 
 .nav {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    margin-top:29px;
-    /* justify-content: space-between; */
+    height: 100%;
+
     
+    background-color:cornflowerblue;
+
+    justify-content: space-between;
+    /* justify-content: space-between; */
+
+}
+
+
+.nav li {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content:space-around;
+    background-color:greenyellow;
 }
 
 .button-menu {
-    width: 194px;
-    height:55px;
-    
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
     border: 1px solid #CA3B3B;  
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -84,10 +78,19 @@ nav {
     background-color: var(--marrom-bombom);
 }
 
+
+hr {
+    width: 100%;
+    
+    border: 1px solid #FFFFFF;
+    
+}
+
+
 main {
     width: 100%;
     
-    height: 81vh;
+    height: 85vh;
     background-color:var(--amarelo-mamys);
 }
 
@@ -105,25 +108,23 @@ main {
 
 
 .left {
-    position: relative; 
+    max-width: 55%;
+    height: 100%;
     display: flex;  
     flex-direction: column;
-    justify-content:space-evenly;
-    width: 56%;
-    height: 100%;
-}
+    justify-content:space-around;
 
+    background-color:black;
+}
 .call {
-    
-    display: flex;
-
-     
+    display: flex; 
     background: red;
-    width: 100%;
-    margin-right: 250px;    
-
-    font-size: 2.3rem;
+    max-width:100%;
+    margin-top:7%;
+    height: 112px;    
+    font-size: 2rem;
 }
+
 .call span {
     color: var(--red-jean);
     font-size: 3rem;
@@ -131,75 +132,140 @@ main {
 }
 
 .left .name {
-    height: 250px;
-    position: absolute;
+    display: flex;
+    
+    flex-direction: column;;
+    color: white;
+    
+    background-color:blueviolet;
+    
+    font-family: var(--fonte-jeancarlos);
+}
+
+.left .name h1, h2 {
+    display: flex;
+    font-size: 5em;
+    
 }
 
 .line-left{
-    border: 1px solid #FFFFFF;
-    position:absolute;
+    
+    border: 0.5px solid #FFFFFF;
+    
     
 }
+
+.left .text {
+    
+    color: #FFFFFF;
+}
+
+
 
 .items {
     display: flex;
+    background-color: yellow;
+    max-width: 100%; 
+    flex-wrap: wrap;    
 }
 
+.items .item-box{
+    display: flex;
+    max-width:33.33333333%;
+    flex-direction: column;
+    
+    background-color:red;
+    
+}
+
+.items .item-box img {
+    display: flex;
+
+    width: 100%;
+    
+    height:100%;
+}
+
+
+.left .legend {
+    color: white;
+}
 
 .right {
+    
     display: flex;  
-    flex-direction: column;
-    position: relative;
-    background-color: green;
+    width: 45%;
+    background-color: red;
     height: 100%;
-}
-
-.right .img  {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    left: 80px;
+    margin: 0 auto;
+    
     
 }
 
 
+.right-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
-.right #img {
-    position: absolute;
-    width: 400px;
-    min-width: 200px;
-    height:400px;
-    z-index: 10;
+    align-items: center;
+    
+    background-color:darkred;
 
-    margin-top: 50px;
 }
 
-.right #triangulo {
-    margin-top: 32px;
+.right-content .img  {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+
+.right-content .img #img {
+    display: flex;
     position: absolute;
-    width: 350px;
-    height: 505px;
+    width: 70%;
+
+    
+    z-index: 10;
+
+    margin-top: 10%;
+    background-color:#DDD67F
+}
+
+.right-content .img #triangulo {
+    display: flex;
+    margin-top: 32px;
+    width: 60%;
     z-index: 1;
 }
 
-.right h2 {
-    position: absolute;
-width: 443px;
-height: 77px;
-top: 450px;
-
-font-family: 'Saira Semi Condensed', sans-serif;
-font-style: italic;
-font-weight: 600;
-font-size: 62px;
-line-height: 75px;
-text-transform: uppercase;
+.right-content .titulo{
+    width: 100%;
+    display: flex;
+    background-color:green;
+    justify-content:center;
+    font-size:1em
 }
 
-.right .img span {
-    
-    background: red;
-    margin-left: 70px;
+.right-content .h2{
+
+    width: 100%;
+    display: flex;
+    background-color:green;
+    justify-content:center;
+
+}
+
+.right-content .titulo span {
+    background-color:aqua;
+    margin-left: 15%;
+
 }
 
 footer {
@@ -207,24 +273,26 @@ footer {
     width: 100%;
     justify-content:center;
     background-color: var(--marrom-bombom);
-    height: 9.5vh;
+    height: 5.5vh;
 
     
 }
 
 .footer {
-    position: relative;
     display: flex;
     justify-content:center;
     width: 100%;
+    height: 100%;
+    
 }
 
-footer div img {
-    position: absolute;
-    width: 130px;
-    height: 130px;
+
+.footer img{
+    display: flex;
+    position: relative;
+    width: 5.   5%;
     z-index: 10;
-    bottom: 10px;
+    bottom: 45%;
 }
 
 
